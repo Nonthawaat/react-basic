@@ -1,8 +1,8 @@
 import {useState,useEffect} from 'react'
-import './fromComponent.css'
+import './FormComponent.css'
 import { v4 as uuidv4 } from 'uuid';
 
-const FromComponent = (porps) => {
+const FromComponent = (onAddItem) => {
 
     const [title,setTitle] = useState('');
     const [amount,setAmount] = useState('');
@@ -24,7 +24,7 @@ const FromComponent = (porps) => {
             amount:Number(amount)
         }
 
-        porps.onAddItem(itemData);
+        onAddItem.onAddItem(itemData);
         setTitle('');
         setAmount(0);
     }

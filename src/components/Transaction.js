@@ -1,14 +1,13 @@
 import Item from './Item';
 import "./Transaction.css";
 
-const Transaction = (porps) => {
-    const { item } = porps;
+const Transaction = ({item}) => {
     return (
         <div>
             <h3>ລາຍງານຂໍ້ມູນ</h3>
             <ul className='item-list'>
-                {item.map((item) => {
-                    return <Item title={item.title} amount={item.amount} key={item.id} />
+                {item.map((element) => {
+                    return <Item title={element.title} amount={element.amount} key={element.id} />
                 })}
             </ul>
         </div>

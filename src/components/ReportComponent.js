@@ -16,7 +16,7 @@ const ReportComponent = () => {
                     <h3 className="report plus">{(income).toLocaleString()} ກີບ</h3>
                 </div>
                 <div>
-                    <h4>ລາຍຈ່າຍ</h4>
+                    <h4>ລາຍຈ່າຍທັງໝົດ  </h4>
                     <h3 className="report minus">{(expense).toLocaleString()} ກີບ</h3>
                 </div>
             </div>

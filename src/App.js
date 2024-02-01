@@ -1,16 +1,21 @@
 import './App.css';
 import Transaction from './components/Transaction';
-import FromComponent from './components/fromComponent';
+import FromComponent from './components/FormComponent';
 import { useEffect, useState } from 'react';
 import DataContext from './data/DataContext';
 import ReportComponent from './components/ReportComponent';
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-function App() {
+const App = () => {
 
     const initState = [
-        { id: 1, title: "ຄ່າໄຟຟ້າ", amount: -60000 },
-        { id: 2, title: "ເງືອນເດືອນ", amount: +3000000 },
+        { id: 1, title: "ຄ່າເຂົ້າປຽກ", amount: -25000},
+        { id: 2, title: "ໃຊ້ຫນີ່", amount: -300000},
+        { id: 3, title: "ຄ່າແປງລົດ", amount: -80000},
+        { id: 4, title: "ໝູ່ຢືມ", amount: -300000},
+        { id: 5, title: "ຄ່າໄຟຟ້າ", amount: -60000 },
+        { id: 6, title: "ຄ່າຫ້ອງ + ຄ່ານ້ຳ", amount: -950000 },
+        { id: 7, title: "ເງືອນເດືອນ", amount: +3000000 },
     ];
 
     const [items, setItems] = useState(initState);

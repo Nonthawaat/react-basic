@@ -4,8 +4,6 @@ import { StrictMode } from 'react';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-//Create component external
-// import HelloComponent from './components/HelloComponent';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

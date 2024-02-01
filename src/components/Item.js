@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import './item.css';
 
-const Item = (porps) => {
-    const { title, amount } = porps;
+const Item = ({title,amount}) => {
     const status = amount < 0 ? "expense" : "income";
     const symbol = amount < 0 ? "-" : "+";
     return (
