@@ -2,7 +2,7 @@ import {useState,useEffect} from 'react'
 import './FormComponent.css'
 import { v4 as uuidv4 } from 'uuid';
 
-const FromComponent = (onAddItem) => {
+const FromComponent = (item) => {
 
     const [title,setTitle] = useState('');
     const [amount,setAmount] = useState('');
@@ -24,9 +24,9 @@ const FromComponent = (onAddItem) => {
             amount:Number(amount)
         }
 
-        onAddItem.onAddItem(itemData);
+        item.onAddItem(itemData);
         setTitle('');
-        setAmount(0);
+        setAmount('');
     }
 
     useEffect(()=>{

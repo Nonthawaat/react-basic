@@ -34,12 +34,10 @@ body{
 
 .horizontal-menu{
   list-style-type: none;
-  /* display: flex; */
-  /* justify-content: space-between; */
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #F39C12;
   text-align: center;
   border-radius: 10px;
 }
@@ -49,7 +47,7 @@ body{
 }
 
 .horizontal-menu a{
-  color: rgb(0, 0, 0);
+  color: #000000;
   text-decoration: none;
   padding: 15px;
 }
